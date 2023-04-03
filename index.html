@@ -5,13 +5,406 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./main.css">
-	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,700" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./css/blocks/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Hydra</title>
 </head>
 
 <body>
-
-
+	<div class="wrapper">
+		<header class="header">
+			<div class='header__container'>
+				<div class="header__top top-header">
+					<div class="top-header__body">
+						<a href="#" class="top-header__logo">
+							<img src="./icons/logo.svg" alt="logo">
+							<img src="./icons/logo-02.svg" alt="logo">
+						</a>
+						<div class="top-header__burger">
+							<span></span>
+						</div>
+						<nav class="top-header__menu">
+							<ul class="top-header__list">
+								<li class="top-header__item">
+									<a href="#" class="top-header__link">ABOUT</a>
+								</li>
+								<li class="top-header__item">
+									<a href="#" class="top-header__link">SERVICES</a>
+								</li>
+								<li class="top-header__item">
+									<a href="#" class="top-header__link">TECHNOLOGIES</a>
+								</li>
+								<li class="top-header__item">
+									<a href="#" class="top-header__link">HOW TO</a>
+								</li>
+							</ul>
+							<div class="top-header__buttons">
+								<a href="#" class="top-header__button top-header__button--first button">CONTACT US</a>
+								<a href="#" class="top-header__button button">JOIN HYDRA</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="main__info info-block">
+				<div class='info-block__container'>
+					<div class="info-block__body">
+						<div class="info-block__content">
+							<h2 class="info-block__title"><span>Dive</span> Into The Depths Of <span>Virtual Reality</span>
+							</h2>
+							<div class="info-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore
+								nisl tincidunt eget. Lectus mauris eros in vitae .</div>
+							<div class="info-block__buttons">
+								<a href="#" class="info-block__button button">BUILD YOUR WORLD</a>
+								<a href="#">
+									<img class="info-block__arrow" src="./img/info/arrow.svg" alt="arrow">
+								</a>
+							</div>
+						</div>
+						<div class="info-block__item">
+							<div class="info-block__image">
+								<img src="./img/info/info-img.png" alt="info">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__contacts contacts-block">
+				<div class='contacts-block__container'>
+					<div class="contacts-block__body">
+						<div class="contacts-block__item item-contacts-block">
+							<div class="item-contacts-block__icon">
+								<img src="./img/contacts/location.svg" alt="location">
+							</div>
+							<div class="item-contacts-block__content">
+								<h3 class="item-contacts-block__title">Pay Us a Visit</h3>
+								<a href="#" class="item-contacts-block__text">Union St, Seattle, WA 98101, United States</a>
+							</div>
+						</div>
+						<div class="contacts-block__item item-contacts-block">
+							<div class="item-contacts-block__icon">
+								<img src="./img/contacts/phone-call.svg" alt="phone">
+							</div>
+							<div class="item-contacts-block__content">
+								<h3 class="item-contacts-block__title">Give Us a Call</h3>
+								<a href="#" class="item-contacts-block__text">(110) 1111-1010</a>
+							</div>
+						</div>
+						<div class="contacts-block__item item-contacts-block contacts-block__item--center">
+							<div class="item-contacts-block__icon">
+								<img src="./img/contacts/mail.svg" alt="mail">
+							</div>
+							<div class="item-contacts-block__content">
+								<h3 class="item-contacts-block__title">Send Us a Message</h3>
+								<a href="#" class="item-contacts-block__text">Contact@HydraVTech.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__introduction introduction-block">
+				<div class='introduction-block__container'>
+					<div class="top-block top-block-introduction-block">
+						<div class="top-block__left">
+							<h3 class="top-block__title">INTRODUCTION</h3>
+							<div class="top-block__subtitle">
+								<p>TO HYDRA VR</p>
+								<a href=""><img src="./img/info/arrow.svg" alt="arrow"></a>
+							</div>
+						</div>
+						<div class="top-block__right">
+							<p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
+								nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+								quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+								lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+						</div>
+					</div>
+					<div class="introduction-block__body">
+						<div class="introduction-block__image">
+							<div class="introduction-block__img">
+								<img src="./img/introduction/img.png" alt="introduction-block">
+							</div>
+						</div>
+						<div class="introduction-block__content">
+							<h3 class="introduction-block__title">ABOUT</h3>
+							<div class="introduction-block__subtitle">HYDRA VR</div>
+							<div class="introduction-block__text">Eget mi proin sed libero enim sed faucibus turpis. Nisl
+								rhoncus mattis rhoncus
+								urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida
+								dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in.
+								Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet
+								sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam
+								etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet
+								cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
+								retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
+								n tempor.</div>
+							<a href="#" class="introduction-block__button button">LET’S GET IN TOUCH</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__build build-block">
+				<div class='build-block__container'>
+					<div class="top-block top-block-build-block">
+						<div class="top-block__left">
+							<h3 class="top-block__title">INTRODUCTION</h3>
+							<div class="top-block__subtitle">
+								<p>TO HYDRA VR</p>
+								<a href=""><img src="./img/info/arrow.svg" alt="arrow"></a>
+							</div>
+						</div>
+						<div class="top-block__right">
+							<p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
+								nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+								quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+								lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+						</div>
+					</div>
+					<div class="build-block__body swiper">
+						<div class="build-block__row swiper-wrapper">
+							<div class="build-block__item item-build-block swiper-slide">
+								<img src="./img/build/build-01.png" alt="build" class="item-build-block__img">
+								<h3 class="item-build-block__title">SIMULATION</h3>
+								<div class="item-build-block__text">Vitae sapien pellentesque habitant morbi
+									nunc. Viverra aliquet porttitor rhoncus
+									libero justo laoreet sit amet vitae.</div>
+								<a href="#" class="item-build-block__button button">TRY IT NOW</a>
+							</div>
+							<div class="build-block__item item-build-block swiper-slide">
+								<img src="./img/build/build-02.png" alt="build" class="item-build-block__img">
+								<h3 class="item-build-block__title">EDUCATION</h3>
+								<div class="item-build-block__text">Vitae sapien pellentesque habitant morbi
+									nunc. Viverra aliquet porttitor rhoncus
+									libero justo laoreet sit amet vitae.</div>
+								<a href="#" class="item-build-block__button button">TRY IT NOW</a>
+							</div>
+							<div class="build-block__item item-build-block swiper-slide">
+								<img src="./img/build/build-03.png" alt="build" class="item-build-block__img">
+								<h3 class="item-build-block__title">SELF-CARE</h3>
+								<div class="item-build-block__text">Vitae sapien pellentesque habitant morbi
+									nunc. Viverra aliquet porttitor rhoncus
+									libero justo laoreet sit amet vitae.</div>
+								<a href="#" class="item-build-block__button button">TRY IT NOW</a>
+							</div>
+							<div class="build-block__item item-build-block swiper-slide">
+								<img src="./img/build/build-04.png" alt="build" class="item-build-block__img">
+								<h3 class="item-build-block__title">OUTDOOR</h3>
+								<div class="item-build-block__text">Vitae sapien pellentesque habitant morbi
+									nunc. Viverra aliquet porttitor rhoncus
+									libero justo laoreet sit amet vitae.</div>
+								<a href="#" class="item-build-block__button button">TRY IT NOW</a>
+							</div>
+						</div>
+						<div class="build-block__swiper-button-prev ">
+							<img src="./img/build/prev.svg" alt="">
+						</div>
+						<div class="build-block__swiper-button-next ">
+							<img src="./img/build/next.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__technologies technologies-block">
+				<div class='technologies-block__container'>
+					<div class="technologies-block__body">
+						<div class="technologies-block__plate">
+							<h3 class="technologies-block__title">TECHNOLOGIES & HARDWARE</h3>
+							<div class="technologies-block__subtitle">USED BY HYDRA VR.</div>
+							<div class="technologies-block__arrow">
+								<img src="./img/build/next.svg" alt="">
+							</div>
+						</div>
+						<div class="technologies-block__wrapper swiper">
+							<div class="technologies-block__row swiper-wrapper">
+								<div class="technologies-block__column swiper-slide">
+									<img src="./img/technologies/Frame 5.png" alt="technologies-block">
+								</div>
+								<div class="technologies-block__column swiper-slide">
+									<img src="./img/technologies/Frame 3.png" alt="technologies-block">
+								</div>
+								<div class="technologies-block__column swiper-slide">
+									<img src="./img/technologies/Frame 4.png" alt="technologies-block">
+								</div>
+								<div class="technologies-block__column swiper-slide">
+									<img src="./img/technologies/Frame 2.png" alt="technologies-block">
+								</div>
+							</div>
+							<div class="technologies-block__swiper-button-prev">
+								<img src="./img/build/prev.svg" alt="">
+							</div>
+							<div class="technologies-block__swiper-button-next">
+								<img src="./img/build/next.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__process process-block">
+				<div class='process-block__container'>
+					<div class="top-block top-block-process-block">
+						<div class="top-block__left">
+							<h3 class="top-block__title">INTRODUCTION</h3>
+							<div class="top-block__subtitle">
+								<p>TO HYDRA VR</p>
+								<a href=""><img src="./img/info/arrow.svg" alt="arrow"></a>
+							</div>
+						</div>
+						<div class="top-block__right">
+							<p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
+								nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+								quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+								lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+						</div>
+					</div>
+					<div class="process-block__body swiper">
+						<div class="process-block__row swiper-wrapper ">
+							<div class="process-block__item swiper-slide">
+								<div class="process-block__munber">
+									<div class="process-block__mun">01</div>
+								</div>
+								<a href="#" class="process-block__description">
+									<img src="./img/info/arrow.svg" alt="">
+									3D Conception
+									& Design
+								</a>
+							</div>
+							<div class="process-block__item swiper-slide">
+								<div class="process-block__munber">
+									<div class="process-block__mun">02</div>
+								</div>
+								<a href="#" class="process-block__description">
+									<img src="./img/info/arrow.svg" alt="">
+									Interaction
+									Design
+								</a>
+							</div>
+							<div class="process-block__item swiper-slide">
+								<div class="process-block__munber">
+									<div class="process-block__mun">03</div>
+								</div>
+								<a href="#" class="process-block__description">
+									<img src="./img/info/arrow.svg" alt="">
+									VR World
+									User Testing
+								</a>
+							</div>
+							<div class="process-block__item swiper-slide">
+								<div class="process-block__munber">
+									<div class="process-block__mun">04</div>
+								</div>
+								<a href="#" class="process-block__description">
+									<img src="./img/info/arrow.svg" alt="">
+									Hydra VR
+									Deploy
+								</a>
+							</div>
+						</div>
+						<div class="process-block__swiper-button-prev ">
+							<img src="./img/build/prev.svg" alt="">
+						</div>
+						<div class="process-block__swiper-button-next ">
+							<img src="./img/build/next.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__form communication-block">
+				<div class='communication-block__container'>
+					<div class="communication-block__body">
+						<h3 class="communication-block__title">JOIN HYDRA</h3>
+						<div class="communication-block__subtitle">Let’s Build Your VR Experience</div>
+						<form action="#" class="communication-block__form form-block">
+							<div class="form-block__name">
+								<input required placeholder="First Name" type="text" class="form-block__first-name">
+								<input placeholder="Last Name" type="text" class="form-block__last-name">
+							</div>
+							<div class="form-block__contact">
+								<input placeholder="Email" type="email" class="form-block__email">
+								<input required placeholder="Phone number" type="tel" class="form-block__tel">
+							</div>
+							<input placeholder="Subject" class="form-block__subject" type="text">
+							<textarea placeholder="Tell Us Something..." name="" id="" cols="30" rows="10"
+								class="form-block__textarea"></textarea>
+							<button type="submit" class="form-block__btn button">SEND TO HYDRA</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class='footer__container'>
+				<div class="footer__content content-footer">
+					<div class="content-footer__logo">
+						<img src="./img/footer-logo.svg" alt="logo">
+					</div>
+					<ul class="content-footer__nav">
+						<li class="content-footer__item">
+							<a href="#" class="content-footer__link">ABOUT</a>
+						</li>
+						<li class="content-footer__item">
+							<a href="#" class="content-footer__link">SERVICES</a>
+						</li>
+						<li class="content-footer__item">
+							<a href="#" class="content-footer__link">TECHNOLOGIES</a>
+						</li>
+						<li class="content-footer__item">
+							<a href="#" class="content-footer__link">HOW TO</a>
+						</li>
+						<li class="content-footer__item">
+							<a href="#" class="content-footer__link">JOIN HYDRA</a>
+						</li>
+					</ul>
+					<ul class="content-footer__list">
+						<li class="content-footer__item">
+							<a href="#" class="content-footer__link">F.A.Q</a>
+						</li>
+						<li class="content-footer__item">
+							<a href="#" class="content-footer__link">SITEMAP</a>
+						</li>
+						<li class="content-footer__item">
+							<a href="#" class="content-footer__link">CONDITIONS</a>
+						</li>
+						<li class="content-footer__item">
+							<a href="#" class="content-footer__link">LICENSES</a>
+						</li>
+					</ul>
+					<div class="content-footer__social social-content">
+						<h4 class="social-content__title">SOCIALIZE WITH HYDRA</h4>
+						<div class="social-content__icons">
+							<a href="#" class="social-content__icon">
+								<img src="./img/footer/facebook.svg" alt="social-content">
+							</a>
+							<a href="#" class="social-content__icon">
+								<img src="./img/footer/instagram.svg" alt="social-content">
+							</a>
+							<a href="#" class="social-content__icon">
+								<img src="./img/footer/linkedin.svg" alt="social-content">
+							</a>
+							<a href="#" class="social-content__icon">
+								<img src="./img/footer/twitter.svg" alt="social-content">
+							</a>
+							<a href="#" class="social-content__icon">
+								<img src="./img/footer/pinterest.svg" alt="social-content">
+							</a>
+							<a href="#" class="social-content__icon">
+								<img src="./img/footer/youtube.svg" alt="social-content">
+							</a>
+						</div>
+						<div class="social-content__button button">BUILD YOUR WORLD</div>
+					</div>
+				</div>
+				<div class="footer__copy">2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED </div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>

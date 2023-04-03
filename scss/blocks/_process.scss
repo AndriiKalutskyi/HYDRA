@@ -1,0 +1,122 @@
+.main {
+	&__process {
+		padding-top: 70px;
+		padding-bottom: 100px;
+		@media (max-width: 991.98px) {
+			padding-top: 60px;
+			padding-bottom: 80px;
+		}
+		@media (max-width: 767.98px) {
+			padding-top: 60px;
+			padding-bottom: 80px;
+		}
+		@media (max-width: 479.98px) {
+			padding-top: 0px;
+			padding-bottom: 60px;
+		}
+	}
+}
+.process-block {
+	&__container {
+	}
+
+	&__body {
+		background: url(../../img/line.svg);
+		background-position: center top;
+		background-repeat: no-repeat;
+		@media (max-width: 767.98px) {
+			background: none;
+		}
+	}
+
+	&__row {
+		display: flex;
+		background: url(../../img/line.svg);
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+
+	&__item {
+	}
+	&__munber {
+		background: rgba(13, 13, 13, 0.32);
+		padding: 20px;
+		border-radius: 50%;
+		width: 198px;
+		height: 198px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	&__mun {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 121.875%; /* 78/64 */
+		color: #343045;
+		background: linear-gradient(251.27deg, #c0b7e8 12.87%, #8176af 89.33%);
+		max-width: 160px;
+		padding: 40px;
+		border-radius: 50%;
+	}
+
+	&__description {
+		display: flex;
+		column-gap: 16px;
+		align-items: center;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 120.833333%; /* 29/24 */
+		max-width: 230px;
+		margin: 0 auto;
+		color: inherit;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+		img {
+			width: 28px;
+			height: 23px;
+		}
+	}
+
+	&__swiper-button-prev {
+		background: linear-gradient(267.61deg, #c0b7e8 -0.6%, #8176af 98.31%);
+		border-radius: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+		top: 50%;
+		left: 0;
+		z-index: 2;
+		@media (min-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&__swiper-button-next {
+		background: linear-gradient(267.61deg, #c0b7e8 -0.6%, #8176af 98.31%);
+		border-radius: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+		top: 50%;
+		right: 0;
+		z-index: 2;
+		@media (min-width: 1024px) {
+			display: none;
+		}
+	}
+}
+
+.top-block-process-block {
+	margin-bottom: 120px;
+	@media (max-width: 991.98px) {
+		margin-bottom: 80px;
+	}
+	@media (max-width: 767.98px) {
+		margin-bottom: 60px;
+	}
+	@media (max-width: 479.98px) {
+		margin-bottom: 37px;
+	}
+}
+.swiper-slide {
+}

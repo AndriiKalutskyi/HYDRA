@@ -1,0 +1,111 @@
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "Montserrat";
+	background-color: var(--bg-color);
+	color: var(--basic-color);
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+[class*="__container"] {
+	max-width: 1290px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.button {
+	width: 214px;
+	height: 48px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 125%;
+	text-align: center;
+	color: var(--second-color);
+	padding: 16px 38px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+	border-radius: 40px;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+	&:hover {
+		background: linear-gradient(90deg, #5c537e 0%, #685d96 100%);
+		color: #06050a;
+		cursor: pointer;
+	}
+}
+.top-block {
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 767.98px) {
+		justify-content: center;
+		padding-top: 80px;
+	}
+	@media (max-width: 479.98px) {
+		padding-top: 30px;
+	}
+	&__left {
+		padding-right: 30px;
+		@media (max-width: 767.98px) {
+			padding-right: 0px;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 122.222222%; /* 44/36 */
+		color: #fff;
+		@media (max-width: 767.98px) {
+			font-size: 26px;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+	}
+	&__subtitle {
+		display: flex;
+		align-items: center;
+		@media (max-width: 767.98px) {
+			justify-content: center;
+		}
+		p {
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 300;
+			font-size: 36px;
+			line-height: 122.222222%; /* 44/36 */
+			color: #fff;
+			white-space: nowrap;
+			@media (max-width: 767.98px) {
+				font-size: 26px;
+			}
+		}
+		img {
+			margin-left: 30px;
+			@media (max-width: 767.98px) {
+				display: none;
+			}
+		}
+	}
+
+	&__right {
+		max-width: 650px;
+		@media (max-width: 767.98px) {
+			display: none;
+		}
+		p {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 125%; /* 20/16 */
+		}
+	}
+}
